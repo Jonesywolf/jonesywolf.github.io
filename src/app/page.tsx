@@ -1,3 +1,4 @@
+import Email from "@/components/email";
 import { HackathonCard } from "@/components/hackathon-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
@@ -27,7 +28,12 @@ export default function Page() {
               <BlurFadeText
                 className="max-w-[600px] md:text-xl"
                 delay={BLUR_FADE_DELAY}
-                text={DATA.description}
+                text={`${DATA.description} | ${DATA.location}`}
+              />
+              <Email 
+              className="flex items-center space-x-1.5"
+              delay={BLUR_FADE_DELAY}
+              email={DATA.contact.email}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
@@ -38,16 +44,6 @@ export default function Page() {
             </BlurFade>
           </div>
         </div>
-      </section>
-      <section id="about">
-        <BlurFade delay={BLUR_FADE_DELAY * 3}>
-          <h2 className="text-xl font-bold">About</h2>
-        </BlurFade>
-        <BlurFade delay={BLUR_FADE_DELAY * 4}>
-          <Markdown className="prose max-w-full text-pretty font-sans text-sm text-muted-foreground dark:prose-invert">
-            {DATA.summary}
-          </Markdown>
-        </BlurFade>
       </section>
       <section id="work">
         <div className="flex min-h-0 flex-col gap-y-3">
@@ -206,13 +202,7 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm{" "}
-                <Link
-                  href={DATA.contact.social.X.url}
-                  className="text-blue-500 hover:underline"
-                >
-                  with a direct question on twitter
-                </Link>{" "}
+                Want to chat? Just shoot me a dm with a direct question on twitter
                 and I&apos;ll respond whenever I can. I will ignore all
                 soliciting.
               </p>
