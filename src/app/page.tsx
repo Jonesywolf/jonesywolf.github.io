@@ -31,7 +31,7 @@ export default function Page() {
                 text={`${DATA.description} | ${DATA.location}`}
               />
               <Email 
-              className="flex items-center space-x-1.5"
+              className="flex-row flex items-center space-x-1.5"
               delay={BLUR_FADE_DELAY}
               email={DATA.contact.email}
               />

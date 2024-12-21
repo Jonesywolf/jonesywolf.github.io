@@ -1,8 +1,7 @@
-import React from 'react';
-import { CopyButton } from './copy-button';
-import BlurFadeText from './magicui/blur-fade-text';
-import BlurFade from './magicui/blur-fade';
-
+import React from "react";
+import { CopyButton } from "./copy-button";
+import BlurFadeText from "./magicui/blur-fade-text";
+import BlurFade from "./magicui/blur-fade";
 
 interface EmailProps {
   className: string;
@@ -13,14 +12,12 @@ interface EmailProps {
 const Email: React.FC<EmailProps> = ({ className, delay, email }) => {
   return (
     <BlurFade delay={delay}>
-    <div className={className}>
-      <BlurFadeText
-        className="max-w-[600px] md:text-l text-muted-foreground"
-        delay={delay}
-        text={email}
-      />
-      <CopyButton value={email} variant="outline"/>
-    </div>
+      <div className={className}>
+        <span className="max-w-[600px] md:text-l text-muted-foreground">
+          {email}
+        </span>
+        <CopyButton value={email} variant="outline" />
+      </div>
     </BlurFade>
   );
 };
