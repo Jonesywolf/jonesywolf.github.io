@@ -1,5 +1,5 @@
 import { Icons } from "@/components/icons";
-import { HammerIcon, HomeIcon, NotebookIcon } from "lucide-react";
+import { HammerIcon, HomeIcon } from "lucide-react";
 
 export const DATA = {
   name: "John Wolf",
@@ -35,24 +35,24 @@ export const DATA = {
     social: {
       GitHub: {
         name: "GitHub",
-        url: "https://dub.sh/dillion-github",
+        url: "https://git.new/johnwolf",
         icon: Icons.github,
 
         navbar: true,
       },
       LinkedIn: {
         name: "LinkedIn",
-        url: "https://dub.sh/dillion-linkedin",
+        url: "https://dub.sh/jw-linkedin",
         icon: Icons.linkedin,
 
         navbar: true,
       },
       email: {
         name: "Send Email",
-        url: "#",
+        url: "mailto:4johnryanwolf@gmail.com",
         icon: Icons.email,
 
-        navbar: false,
+        navbar: true,
       },
     },
   },
