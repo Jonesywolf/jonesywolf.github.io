@@ -90,17 +90,21 @@ export const ResumeCard = ({
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{
-                opacity: isExpanded ? 1 : 0,
-
-                height: isExpanded ? "auto" : 0,
+              opacity: isExpanded ? 1 : 0,
+              height: isExpanded ? "auto" : 0,
               }}
               transition={{
-                duration: 0.7,
-                ease: [0.16, 1, 0.3, 1],
+              duration: 0.7,
+              ease: [0.16, 1, 0.3, 1],
               }}
               className="mt-2 text-xs sm:text-sm"
             >
-              {description}
+              {description.split('\n').map((line, index) => (
+              <React.Fragment key={index}>
+                {line}
+                <br />
+              </React.Fragment>
+              ))}
             </motion.div>
           )}
         </div>
