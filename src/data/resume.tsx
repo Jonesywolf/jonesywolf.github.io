@@ -10,7 +10,7 @@ export const DATA = {
   description:
     "Robotics Engineering @UofT",
   summary:
-    "At the end of 2022, I quit my job as a software engineer to go fulltime into building and scaling my own SaaS businesses. In the past, [I pursued a double degree in computer science and business](/#education), [interned at big tech companies in Silicon Valley](https://www.youtube.com/watch?v=d-LJ2e5qKdE), and [competed in over 21 hackathons for fun](/#hackathons). I also had the pleasure of being a part of the first ever in-person cohort of buildspace called [buildspace sf1](https://buildspace.so/sf1).",
+    "I'll never forget the smell of burning circuit boards, or the memory it invariably resurfaces... In preparation for the launch of my first business, Progetto Company, I was manufacturing my first batch of circuit boards in my parent's basement. Having never reflowed solder on a hot plate before, I \"overcooked\" them and melted the solder mask, ruining all 24. The subsequent sting of failure taught me a valuable lesson that day and would continue to, for years to come. In the pursuit of various mechanical, electrical, and software projects for my school, my own company, and my past 3 engineering internships, I've learned (and failed) a lot since then. Along the way, I've learned that a combination of the three domains is my happy place, which is why I am pursuing a degree in Robotics Engineering at UofT. I hope my engineering experiences inside and outside work continue to cater to this multidisciplinary interest and encourage me to keep learning new things. Since you're here, if you ever need someone to lightly \"toast\" some circuit boards for you, shoot me a message!",
   avatarUrl: "/me.png",
   skills: [
     "React",
