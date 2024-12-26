@@ -54,6 +54,13 @@ export const DATA = {
 
         navbar: true,
       },
+      goodreads: {
+        name: "Goodreads",
+        url: "https://dub.sh/jw-goodreads",
+        icon: Icons.goodreads,
+
+        navbar: true,
+      }
     },
   },
 
@@ -137,7 +144,7 @@ export const DATA = {
       end: "2020",
     },
   ],
-  projects: [
+  highlightedProjects: [
     {
       title: "Chat Collect",
       href: "https://chatcollect.com",
@@ -261,7 +268,7 @@ export const DATA = {
         "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
     },
   ],
-  hackathons: [
+  projects: [
     {
       title: "Hack Western 5",
       dates: "November 23rd - 25th, 2018",

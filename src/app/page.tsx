@@ -1,8 +1,8 @@
 import Email from "@/components/email";
-import { HackathonCard } from "@/components/hackathon-card";
+import { ProjectCard } from "@/components/project-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
-import { ProjectCard } from "@/components/project-card";
+import { HighlightedProjectCard } from "@/components/highlighted-project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Badge } from "@/components/ui/badge";
@@ -107,7 +107,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="projects">
+      <section id="highlighted-projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 11}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -119,20 +119,18 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve worked on a variety of projects, from simple
-                  websites to complex web applications. Here are a few of my
-                  favorites.
+                  I&apos;ve always had a side project (or two) on the go. Trying (and failing) to make something new has taught me more about engineering than school ever has. Here's the highlight reel:
                 </p>
               </div>
             </div>
           </BlurFade>
           <div className="grid grid-cols-1 gap-3 sm:grid-cols-2 max-w-[800px] mx-auto">
-            {DATA.projects.map((project, id) => (
+            {DATA.highlightedProjects.map((project, id) => (
               <BlurFade
                 key={project.title}
                 delay={BLUR_FADE_DELAY * 12 + id * 0.05}
               >
-                <ProjectCard
+                <HighlightedProjectCard
                   href={project.href}
                   key={project.title}
                   title={project.title}
@@ -148,7 +146,7 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <section id="hackathons">
+      <section id="projects">
         <div className="space-y-12 w-full py-12">
           <BlurFade delay={BLUR_FADE_DELAY * 13}>
             <div className="flex flex-col items-center justify-center space-y-4 text-center">
@@ -160,24 +158,19 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  During my time in university, I attended{" "}
-                  {DATA.hackathons.length}+ hackathons. People from around the
-                  country would come together and build incredible things in 2-3
-                  days. It was eye-opening to see the endless possibilities
-                  brought to life by a group of motivated and passionate
-                  individuals.
+                  Not all my projects knocked it out of the park. Here are some of the other projects I've worked on in the past, some of these were for Progetto Company, but being a one-man show, I still consider them personal projects. I'm proud of all of them, weird ones and all.
                 </p>
               </div>
             </div>
           </BlurFade>
           <BlurFade delay={BLUR_FADE_DELAY * 14}>
             <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
-              {DATA.hackathons.map((project, id) => (
+              {DATA.projects.map((project, id) => (
                 <BlurFade
                   key={project.title + project.dates}
                   delay={BLUR_FADE_DELAY * 15 + id * 0.05}
                 >
-                  <HackathonCard
+                  <ProjectCard
                     title={project.title}
                     description={project.description}
                     location={project.location}
@@ -191,10 +184,27 @@ export default function Page() {
           </BlurFade>
         </div>
       </section>
+      <section id="ventures">
+      <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <div className="space-y-2">
+              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                Ventures
+              </div>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                I like making money
+              </h2>
+              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Coming Soon™️
+              </p>
+            </div>
+          </BlurFade>
+        </div>
+      </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-3">
+          <BlurFade delay={BLUR_FADE_DELAY * 18}>
+            <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
               </div>
@@ -202,9 +212,7 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Want to chat? Just shoot me a dm with a direct question on twitter
-                and I&apos;ll respond whenever I can. I will ignore all
-                soliciting.
+                I'm currently looking for full-time opportunities post graduation (May 2025). As I hope my projects demonstrate, I have a broad set of interests and skillsets. If you think I'd be a good fit for your team, or if you just want to chat, feel free to reach out to me via email or LinkedIn, as you prefer.
               </p>
             </div>
           </BlurFade>
