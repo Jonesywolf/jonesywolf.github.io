@@ -119,7 +119,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve always had a side project (or two) on the go. Trying (and failing) to make something new has taught me more about engineering than school ever has. Here's the highlight reel:
+                  I&apos;ve always had a side project (or two) on the go. Trying (and failing) to make something new has taught me more about engineering than school ever has. Here&apos;s the highlight reel:
                 </p>
               </div>
             </div>
@@ -158,7 +158,7 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Not all my projects knocked it out of the park. Here are some of the other projects I've worked on in the past, some of these were for Progetto Company, but being a one-man show, I still consider them personal projects. I'm proud of all of them, weird ones and all.
+                  Not all my projects knocked it out of the park. Here are some of the other projects I&apos;ve worked on in the past, some of these were for Progetto Company, but being a one-man show, I still consider them personal projects. I&apos;m proud of all of them, weird ones and all.
                 </p>
               </div>
             </div>
@@ -212,7 +212,7 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I'm currently looking for full-time opportunities post graduation (May 2025). As I hope my projects demonstrate, I have a broad set of interests and skillsets. If you think I'd be a good fit for your team, or if you just want to chat, feel free to reach out to me via email or LinkedIn, as you prefer.
+                I&apos;m currently looking for full-time opportunities post graduation (May 2025). As I hope my projects demonstrate, I have a broad set of interests and skillsets. If you think I&apos;d be a good fit for your team, or if you just want to chat, feel free to reach out to me via email or LinkedIn, as you prefer.
               </p>
             </div>
           </BlurFade>
