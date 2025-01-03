@@ -64,7 +64,7 @@ export const DATA = {
     },
   },
 
-  work: [
+  experience: [
     {
       company: "Progetto Company",
       href: "https://www.tindie.com/stores/Progetto/",
@@ -100,6 +100,17 @@ export const DATA = {
       end: "September 2022",
       description:
         "• Tested and debugged network card prototypes by creating Bode plots, using oscilloscopes and multimeters.\n• Created several innovative PoC projects to save Nokia time and money:\n• Programmed spreadsheet-based tuning aid using VBA.\n• Developed a Perl-based script generator from telnet command line log files.\n• Used Fusion 360 to design, prototype, and produce 3D-printed bench-tool alternatives for a tenth of the market price.",
+    },
+    {
+      company: "FRC Team 2706 - Merge Robotics",
+      href: "https://www.team2706.ca/",
+      badges: [],
+      location: "Ottawa, ON",
+      title: "Robotics Team Member",
+      logoUrl: "/merge.jpg",
+      start: "September 2016",
+      end: "June 2020",
+      description: "• Worked on the controls team for two years and spent two years on Design and Fabrication.\n• Learned about control system wiring and troubleshooting, SolidWorks CAD design, and metal fabrication.\n• Made it to FRC World Championships in 2018, Provincial Championships every other year."
     },
     {
       company: "MVS Remote Video Systems Inc.",
