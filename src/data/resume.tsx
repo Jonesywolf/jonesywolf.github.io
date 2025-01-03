@@ -146,126 +146,119 @@ export const DATA = {
   ],
   highlightedProjects: [
     {
-      title: "Chat Collect",
-      href: "https://chatcollect.com",
-      dates: "Jan 2024 - Feb 2024",
+      title: "Globe Robot",
+      href: "https://github.com/Jonesywolf/Globe-Robot",
+      dates: "March 2023 - April 2023",
       active: true,
       description:
-        "With the release of the [OpenAI GPT Store](https://openai.com/blog/introducing-the-gpt-store), I decided to build a SaaS which allows users to collect email addresses from their GPT users. This is a great way to build an audience and monetize your GPT API usage.",
+        "For MIE438, my friends and I developed a globe robot which can respond to user queries and highlight the user's requested location on a globe with a magnifying glass, combining ChatGPT and Google's Text to Speech APIs to vocally respond with an interesting fact. I focused on the stepper mount design, the Arduino code, and the project's wiring.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Python",
+        "APIs",
+        "Fusion 360",
+        "Arduino",
+        "Raspberry Pi",
       ],
       links: [
         {
-          type: "Website",
-          href: "https://chatcollect.com",
-          icon: <Icons.globe className="size-3" />,
+          type: "Video Demo",
+          href: "https://www.youtube.com/watch?v=3yApgu7Wu_0",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/Jonesywolf/Globe-Robot",
+          icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
+      image: "https://github.com/Jonesywolf/Globe-Robot/blob/main/demo.gif?raw=true",
       video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/chat-collect.mp4",
+        "",
     },
     {
-      title: "Magic UI",
+      title: "One Pin Keypad",
       href: "https://magicui.design",
-      dates: "June 2023 - Present",
+      dates: "August 2018 - October 2018",
       active: true,
       description:
-        "Designed, developed and sold animated UI components for developers.",
+        "One Pin Keypad was the first product I ever made for my first company, and was one of the biggest learning experiences of my life. It makes a typical matrix keypad far easier to wire, much easier to program, and saves you a ton of digital I/O on your microcontroller or single board computer.",
       technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Stripe",
-        "Shadcn UI",
-        "Magic UI",
+        "Arduino",
+        "Raspberry Pi",
+        "Eagle CAD",
+      ],
+      links: [
+        {
+          type: "Video Demo",
+          href: "https://youtu.be/YCaUk3orwyQ&t=4",
+          icon: <Icons.youtube className="size-3" />,
+        },
+        {
+          type: "Website",
+          href: "https://www.tindie.com/products/Progetto/one-pin-keypad/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Arduino Library",
+          href: "https://github.com/ProgettoCompany/Progetto_One_Pin_Keypad_Arduino_Library",
+          icon: <Icons.github className="size-3" />,
+        },
+        {
+          type: "Eagle Files",
+          href: "https://github.com/ProgettoCompany/Progetto_One_Pin_Keypad_Eagle_Files",
+          icon: <Icons.github className="size-3" />,
+        }
+      ],
+      image: "https://github.com/ProgettoCompany/Product-Photos/blob/main/One%20Pin%20Keypad/calculator.gif?raw=true",
+      video: "",
+    },
+    {
+      title: "Chestor [Coming Soon]",
+      href: "http://chestor.app",
+      dates: "December 2023 - Present",
+      active: true,
+      description:
+        "AI-enhanced storage app for iOS and Android. Currently internally testing release candidates. Aiming to release in Spring 2025.",
+      technologies: [
+        "Flutter",
+        "Firebase",
       ],
       links: [
         {
           type: "Website",
-          href: "https://magicui.design",
+          href: "http://chestor.app",
           icon: <Icons.globe className="size-3" />,
         },
+        // TODO: Add video demo, Google Play Store, and Apple App Store links
+      ],
+      image: "/chestor.jpg",
+      video: "",
+    },
+    {
+      title: "BitCaml - Bitcoin Anti-Money Laundering Tool",
+      href: "https://github.com/Jonesywolf/bitcoin-aml-thesis",
+      dates: "August 2024 - Present",
+      active: true,
+      description:
+        "Developing a web-based blockchain explorer with AI-based money laundering detection for my thesis. The tool uses a custom AI model to detect money laundering patterns in Bitcoin transactions.",
+      technologies: [
+        "React",
+        "Typescript",
+        "Python (FastAPI)",
+        "Bootstrap",
+        "Sigma.js",
+        "Neo4j",
+        "MongoDB", // TODO: Remove?
+      ],
+      links: [
         {
           type: "Source",
-          href: "https://github.com/magicuidesign/magicui",
+          href: "https://github.com/Jonesywolf/bitcoin-aml-thesis",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "",
-      video: "https://cdn.magicui.design/bento-grid.mp4",
-    },
-    {
-      title: "llm.report",
-      href: "https://llm.report",
-      dates: "April 2023 - September 2023",
-      active: true,
-      description:
-        "Developed an open-source logging and analytics platform for OpenAI: Log your ChatGPT API requests, analyze costs, and improve your prompts.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://llm.report",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/dillionverma/llm.report",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "",
-      video: "https://cdn.llm.report/openai-demo.mp4",
-    },
-    {
-      title: "Automatic Chat",
-      href: "https://automatic.chat",
-      dates: "April 2023 - March 2024",
-      active: true,
-      description:
-        "Developed an AI Customer Support Chatbot which automatically responds to customer support tickets using the latest GPT models.",
-      technologies: [
-        "Next.js",
-        "Typescript",
-        "PostgreSQL",
-        "Prisma",
-        "TailwindCSS",
-        "Shadcn UI",
-        "Magic UI",
-        "Stripe",
-        "Cloudflare Workers",
-      ],
-      links: [
-        {
-          type: "Website",
-          href: "https://automatic.chat",
-          icon: <Icons.globe className="size-3" />,
-        },
-      ],
-      image: "",
-      video:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/automatic-chat.mp4",
+      image: "/bitcaml.jpg", // TODO: Make this a gif
+      video: "",
     },
   ],
   projects: [
