@@ -119,7 +119,7 @@ export default function Page() {
                   Check out my latest work
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve always had a side project (or two) on the go. Trying (and failing) to make something new has taught me more about engineering than school ever has. Here&apos;s the highlight reel:
+                  I&apos;ve always had a side project (or two) on the go. Trying (and failing) to make something new has taught me more about engineering and myself than anything else ever has. Here&apos;s the highlight reel:
                 </p>
               </div>
             </div>
