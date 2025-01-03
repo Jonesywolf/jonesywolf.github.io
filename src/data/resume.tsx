@@ -11,7 +11,7 @@ export const DATA = {
     "Robotics Engineering @UofT",
   summary:
     "I'll never forget the smell of burning circuit boards, or the memory it invariably resurfaces... In preparation for the launch of my first business, Progetto Company, I was manufacturing my first batch of circuit boards in my parent's basement. Having never reflowed solder on a hot plate before, I \"overcooked\" them and melted the solder mask, ruining all 24. The subsequent sting of failure taught me a valuable lesson that day and would continue to, for years to come. In the pursuit of various mechanical, electrical, and software projects for my school, my own company, and my past 3 engineering internships, I've learned (and failed) a lot since then. Along the way, I've learned that a combination of the three domains is my happy place, which is why I am pursuing a degree in Robotics Engineering at UofT. I hope my engineering experiences inside and outside work continue to cater to this multidisciplinary interest and encourage me to keep learning new things. Since you're here, if you ever need someone to lightly \"toast\" some circuit boards for you, shoot me a message!",
-  avatarUrl: "/me.png",
+  avatarUrl: "/me.jpg",
   skills: [
     "React",
     "Next.js",
