@@ -188,7 +188,7 @@ export const DATA = {
     },
     {
       title: "One Pin Keypad",
-      href: "https://magicui.design",
+      href: "https://www.tindie.com/products/Progetto/one-pin-keypad/",
       dates: "August 2018 - October 2018",
       active: true,
       description:
