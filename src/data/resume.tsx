@@ -1,28 +1,29 @@
 import { Icons } from "@/components/icons";
 import { HammerIcon, HomeIcon } from "lucide-react";
+import { title } from "process";
 
 export const DATA = {
   name: "John Wolf",
   initials: "JW",
-  url: "https://dillion.io",
+  url: "https://johnrwolf.com",
   location: "📍 Toronto, ON",
-  locationLink: "https://www.google.com/maps/place/sanfrancisco",
+  locationLink: "https://www.google.com/maps/place/toronto",
   description:
     "Robotics Engineering @UofT",
   summary:
-    "I'll never forget the smell of burning circuit boards, or the memory it invariably resurfaces... In preparation for the launch of my first business, Progetto Company, I was manufacturing my first batch of circuit boards in my parent's basement. Having never reflowed solder on a hot plate before, I \"overcooked\" them and melted the solder mask, ruining all 24. The subsequent sting of failure taught me a valuable lesson that day and would continue to, for years to come. In the pursuit of various mechanical, electrical, and software projects for my school, my own company, and my past 3 engineering internships, I've learned (and failed) a lot since then. Along the way, I've learned that a combination of the three domains is my happy place, which is why I am pursuing a degree in Robotics Engineering at UofT. I hope my engineering experiences inside and outside work continue to cater to this multidisciplinary interest and encourage me to keep learning new things. Since you're here, if you ever need someone to lightly \"toast\" some circuit boards for you, shoot me a message!",
+    "I'll never forget the smell of burning circuit boards—or the lesson it taught me.\nIn preparation for the launch of my first business, Progetto Company, I was manufacturing my first batch of circuit boards in my parents' basement. Having never reflowed solder on a hot plate before, I accidentally \"overcooked\" all 24, melting the solder mask and ruining the batch. While that failure stung, it taught me valuable lessons about perseverance, problem-solving, and learning through experience—principles that have shaped my journey ever since.\nThrough various mechanical, electrical, and software projects—whether for school, my business, or three engineering internships—I've learned (and failed) a lot. These experiences have solidified my passion for mechatronics and robotics engineering, blending the best of mechanical, electrical, and software domains. It’s this intersection that inspired me to pursue a degree in Robotics Engineering at the University of Toronto.\nI hope my engineering experiences inside and outside work continue to cater to this multidisciplinary interest and encourage me to keep learning new things. Whether you’ve got an idea to share, a project to tackle, or some circuit boards to “toast”, shoot me a message—I’d love to chat!",
   avatarUrl: "/me.jpg",
   skills: [
-    "React",
-    "Next.js",
-    "Typescript",
-    "Node.js",
+    "Arduino",
     "Python",
-    "Go",
+    "Go/Golang",
+    "Fusion 360",
+    "Flutter",
+    "Prototyping",
     "Postgres",
     "Docker",
-    "Kubernetes",
     "Java",
+    "C",
     "C++",
   ],
   navbar: [
@@ -75,7 +76,7 @@ export const DATA = {
       start: "January 2019",
       end: "Present",
       description:
-        "• I sell hobbyist electronics modules for Arduino and Raspberry Pi enthusiasts. Progetto now has ~7.5K followers on Instagram, and I have fulfilled orders from Canada, the U.S.A, Germany, Romania, Australia, and South Africa.\n• Completed the entire product development cycle: inception, design, prototype, refine, test, manufacture, document, and commercialize.\n• Wrote and distributed product support libraries in Python and Arduino.\n• Developed my soldering and hardware debugging skills as well as my circuit board design skills using Eagle.\n• Gained experience in social media marketing; built an ecommerce site via Shopify.",
+        "• I sell hobbyist electronics modules for Arduino and Raspberry Pi enthusiasts. Progetto now has ~7.5K followers on Instagram, with paying customers in 8 countries.\n• Completed the entire product development cycle: inception, design, prototyping, refinement, testing, manufacturing, documentation, and commercialization\n• Wrote and distributed product support libraries in Python and Arduino.\n• Developed my soldering and hardware debugging skills as well as my circuit board design skills using Eagle / Fusion 360.",
     },
     {
       company: "Jule (eCamion)",
@@ -87,7 +88,19 @@ export const DATA = {
       start: "May 2023",
       end: "August 2024",
       description:
-        "• Implemented EV charging communication standards primarily using Golang, unlocking millions in federal EV charging funding. \n• Designed a REST-based server from the ground up to manage and control and communicate the state of our charger. Also added end-to-end testing.\n• Implemented a complete revamp of our cloud infrastructure to significantly reduce our AWS bill by shifting towards our own Kubernetes deployments of that mimicked the AWS feature sets we used. Furthermore, I redesigned our existing applications to be horizontally scalable as microservices using MQTT v5’s shared subscriptions.\n• Used C++ to create a legacy-compatible interface for a new payment device",
+        "• Implemented EV charging communication stacks in Golang to achieve OCPI & OCPP certifications, unlocking millions in federal funding.\n• Automated the ChargeON grant application process, thus reducing the time spent per application and eliminating transcription errors. This increased the number of submissions by 67%, corresponding to an increase of ~7.6M CAD in funding.\n• Designed an OCPI management server from the ground up to enable control and surveillance of the charging system, including automated end-to-end testing.\n• Reduced AWS cloud infra spend, by developing a homegrown solution using Golang, MQTT, and Redis deployed on a Kubernetes cluster. This cut the associated cloud cost by ~85%. \n• Independently redesigned our data pipeline for dynamic scalability using a microservices-based architecture, leveraging MQTT v5’s shared subscriptions.\n• Created a legacy-compatible C++ Modbus adapter to enable our next-gen POS upgrade.",
+    },
+    {
+      company: "UofT Robosoccer Team",
+      href: "https://www.utra.ca/teams/robosoccer/",
+      badges: [],
+      location: "Toronto, ON",
+      title: "Member",
+      logoUrl: "/utra.jpg",
+      start: "September 2022",
+      end: "April 2023",
+      description:
+        "• Implemented robot localization using computer vision in Python + ROS for a humanoid soccer robot. Developed practical knowledge in OpenCV, Linux, git, and ROS.",
     },
     {
       company: "Nokia",
@@ -99,7 +112,7 @@ export const DATA = {
       start: "May 2022",
       end: "September 2022",
       description:
-        "• Tested and debugged network card prototypes by creating Bode plots, using oscilloscopes and multimeters.\n• Created several innovative PoC projects to save Nokia time and money:\n• Programmed spreadsheet-based tuning aid using VBA.\n• Developed a Perl-based script generator from telnet command line log files.\n• Used Fusion 360 to design, prototype, and produce 3D-printed bench-tool alternatives for a tenth of the market price.",
+        "• Tested and debugged network card prototypes using oscilloscopes and multimeters.\n• Created several innovative PoC projects to save Nokia time and money:\n o Automated a design workflow by creating a VBA-based optimization tool.\n o Developed a Perl-based script generator for automating manual telnet command sequences.\n o Used Fusion 360 to design, prototype, and produce 3D-printed bench-tool alternatives for a tenth of the market price.",
     },
     {
       company: "FRC Team 2706 - Merge Robotics",
@@ -110,7 +123,7 @@ export const DATA = {
       logoUrl: "/merge.jpg",
       start: "September 2016",
       end: "June 2020",
-      description: "• Worked on the controls team for two years and spent two years on Design and Fabrication.\n• Learned about control system wiring and troubleshooting, SolidWorks CAD design, and metal fabrication.\n• Made it to FRC World Championships in 2018, Provincial Championships every other year."
+      description: "• Installed control system wiring and troubleshooting, SolidWorks CAD design, and metal fabrication.\n• Competed in FRC Provincial Championships 2016-2020, FRC World Championships 2018"
     },
     {
       company: "MVS Remote Video Systems Inc.",
@@ -134,7 +147,7 @@ export const DATA = {
       start: "July 2019",
       end: "August 2019",
       description:
-        "• Independently developed a prototypical schematic validation application for optical networking circuit boards using Python, exercising all facets of a software delivery cycle: Requirement-gathering, design, prototyping, debugging, testing, documentation.\n• Developed documentation with Sphinx generating HTML and CSS pages using Python.",
+        "• Independently developed a prototypical schematic validation application for optical networking circuit boards using Python, exercising all facets of a software delivery cycle:\n o Requirement-gathering, design, prototyping, debugging, testing, documentation.\n• Developed documentation with Sphinx generating HTML and CSS using Python.",
     },
   ],
   education: [
@@ -259,7 +272,7 @@ export const DATA = {
         "Bootstrap",
         "Sigma.js",
         "Neo4j",
-        "MongoDB", // TODO: Remove?
+        "MongoDB",
       ],
       links: [
         {
@@ -274,386 +287,201 @@ export const DATA = {
   ],
   projects: [
     {
-      title: "Hack Western 5",
-      dates: "November 23rd - 25th, 2018",
-      location: "London, Ontario",
+      title: "Home Buddies - Interactive Visual Home Assistants",
+      dates: "February 2024",
+      location: "", // TODO Use location text for something
       description:
-        "Developed a mobile application which delivered bedtime stories to children using augmented reality.",
+        "Developed various interactive home assistants using several Raspberry Pis networked together with our laptops. Employed various computer vision libraries to track users faces and interact with them.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-western.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 14th - 16th, 2018",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mobile application which delivers university campus wide events in real time to all students.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2019/mlh-trust-badge-2019-white.svg",
-      links: [],
-    },
-    {
-      title: "FirstNet Public Safety Hackathon",
-      dates: "March 23rd - 24th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a mobile application which communcicates a victims medical data from inside an ambulance to doctors at hospital.",
-      icon: "public",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/firstnet.png",
-      links: [],
-    },
-    {
-      title: "DeveloperWeek Hackathon",
-      dates: "February 3rd - 4th, 2018",
-      location: "San Francisco, California",
-      description:
-        "Developed a web application which aggregates social media data regarding cryptocurrencies and predicts future prices.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/developer-week.jpg",
-      links: [
-        {
-          title: "Github",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/cryptotrends/cryptotrends",
-        },
-      ],
-    },
-    {
-      title: "HackDavis",
-      dates: "January 20th - 21st, 2018",
-      location: "Davis, California",
-      description:
-        "Developed a mobile application which allocates a daily carbon emission allowance to users to move towards a sustainable environment.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-davis.png",
-      win: "Best Data Hack",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2018/white.svg",
-      links: [
-        {
-          title: "Devpost",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/my6footprint",
-        },
-        {
-          title: "ML",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/my6footprint-machine-learning",
-        },
-        {
-          title: "iOS",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/CarbonWallet",
-        },
-        {
-          title: "Server",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/Wallet6/wallet6-server",
-        },
-      ],
-    },
-    {
-      title: "ETH Waterloo",
-      dates: "October 13th - 15th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a blockchain application for doctors and pharmacists to perform trustless transactions and prevent overdosage in patients.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/eth-waterloo.png",
-      links: [
-        {
-          title: "Organization",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ethdocnet",
-        },
-      ],
-    },
-    {
-      title: "Hack The North",
-      dates: "September 15th - 17th, 2017",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a virtual reality application allowing users to see themselves in third person.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-north.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Streamer Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/htn2017",
-        },
-        {
-          title: "Client Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/RTSPClient",
-        },
-      ],
-    },
-    {
-      title: "Hack The 6ix",
-      dates: "August 26th - 27th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed an open platform for people shipping items to same place to combine shipping costs and save money.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-the-6ix.jpg",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+        "projects/home-buddies.png",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/ShareShip/ShareShip",
-        },
-        {
-          title: "Site",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://share-ship.herokuapp.com/",
-        },
-      ],
-    },
-    {
-      title: "Stupid Hack Toronto",
-      dates: "July 23rd, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a chrome extension which tracks which facebook profiles you have visited and immediately texts your girlfriend if you visited another girls page.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/stupid-hackathon.png",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/nsagirlfriend/nsagirlfriend",
-        },
-      ],
-    },
-    {
-      title: "Global AI Hackathon - Toronto",
-      dates: "June 23rd - 25th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a python library which can be imported to any python game and change difficulty of the game based on real time emotion of player. Uses OpenCV and webcam for facial recognition, and a custom Machine Learning Model trained on a [Kaggle Emotion Dataset](https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/leaderboard) using [Tensorflow](https://www.tensorflow.org/Tensorflow) and [Keras](https://keras.io/). This project recieved 1st place prize at the Global AI Hackathon - Toronto and was also invited to demo at [NextAI Canada](https://www.nextcanada.com/next-ai).",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/global-ai-hackathon.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://syncedreview.com/2017/06/26/global-ai-hackathon-in-toronto/",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/TinySamosas/",
-        },
-      ],
-    },
-    {
-      title: "McGill AI for Social Innovation Hackathon",
-      dates: "June 17th - 18th, 2017",
-      location: "Montreal, Quebec",
-      description:
-        "Developed realtime facial microexpression analyzer using AI",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/ai-for-social-good.jpg",
-      links: [],
-    },
-    {
-      title: "Open Source Circular Economy Days Hackathon",
-      dates: "June 10th, 2017",
-      location: "Toronto, Ontario",
-      description:
-        "Developed a custom admin interface for food waste startup <a href='http://genecis.co/'>Genecis</a> to manage their data and provide analytics.",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/open-source-circular-economy-days.jpg",
-      win: "1st Place Winner",
-      links: [
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/genecis",
-        },
-      ],
-    },
-    {
-      title: "Make School's Student App Competition 2017",
-      dates: "May 19th - 21st, 2017",
-      location: "International",
-      description: "Improved PocketDoc and submitted to online competition",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/make-school-hackathon.png",
-      win: "Top 10 Finalist | Honourable Mention",
-      links: [
-        {
-          title: "Medium Article",
-          icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://medium.com/make-school/the-winners-of-make-schools-student-app-competition-2017-a6b0e72f190a",
+          href: "https://github.com/Jonesywolf/harry-potter-paintings",
         },
         {
           title: "Devpost",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
+          href: "https://devpost.com/software/home-buddies",
         },
         {
-          title: "YouTube",
+          title: "Video Demo",
           icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
+          href: "https://www.youtube.com/watch?v=ObPXIejOL1A",
         },
       ],
     },
     {
-      title: "HackMining",
-      dates: "May 12th - 14th, 2017",
-      location: "Toronto, Ontario",
-      description: "Developed neural network to optimize a mining process",
+      title: "DIY Raspberry Pi Volume Control Knob",
+      dates: "December 2018",
+      location: "",
+      description:
+        "To market the ADS1115 module I started carrying, I created a volume control knob for the Raspberry Pi using a potentiometer, an ADS1115 16-bit ADC, a breadboard, and some jumper wires. This is more of a tutorial module than a project and should serve as a great baseline for any projects where you need analog inputs on your Raspberry Pi.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/hack-mining.png",
-      links: [],
+        "projects/volume-knob.jpg",
+      links: [
+        {
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/ProgettoCompany/Raspberry_Pi_Volume_Knob",
+        },
+        {
+          title: "Instructables",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.instructables.com/DIY-Raspberry-Pi-Volume-Control-Knob-Using-an-ADS1/",
+        }
+      ],
     },
     {
-      title: "Waterloo Equithon",
-      dates: "May 5th - 7th, 2017",
-      location: "Waterloo, Ontario",
+      title: "PairwiseDNA: Using Deep Learning to Predict Incorrect Binding During Synthetic DNA Assembly",
+      dates: "January 2023 - April 2023",
+      location: "",
       description:
-        "Developed Pocketdoc, an app in which you take a picture of a physical wound, and the app returns common solutions or cures to the injuries or diseases.",
+        "For our APS360 final project, my group and I developed a deep-learning model which aimed to predict the binding affinity between two short regions of DNA. I worked mostly on the non-deep learning-based baseline for this project, a k-nearest neighbours approach. I also trained a small ANN as a baseline but it performed even worse than the kNN solution.It was interesting to apply my machine-learning skills to a new industry and I learned a lot about DNA throughout this project.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/waterloo-equithon.png",
+        "projects/pairwise-dna.jpg",
+      links: [
+        {
+          title: "GitHub",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/Jonesywolf/pairwise-dna",
+        },
+        {
+          title: "Google Colab",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://colab.research.google.com/drive/1APkiASokAhh6lzpSA2_Fm9U9BQZcurR2?usp=sharing",
+        }
+      ],
+    },
+    {
+      title: "Spinify - A Spotify-Powered Record Player",
+      dates: "February 2023",
+      location: "",
+      description:
+        "Spinify uses NFC stickers to recognize a record and Spotify’s API to play the song associated with that record. Place a record on the turntable, and Spinify will identify the song, album, or playlist associated with that record and start streaming the corresponding song, album or playlist from Spotify when the needle is placed on the record. Under the hood it uses an Arduino (my focus during the project) which reads the user inputs and sensor data, controls the motor and interfaces with the display and the Raspberry Pi which plays the music from the speaker and interfaces with the Spotify API. Getting the display working, especially transitioning from volume control to play back was very challenging and I learned a lot.",
+      image:
+        "projects/spinify.jpg",
       links: [
         {
           title: "Devpost",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "https://devpost.com/software/pocketdoc-react-native",
+          href: "https://devpost.com/software/spinify",
         },
         {
-          title: "YouTube",
+          title: "Source",
+          icon: <Icons.github className="h-4 w-4" />,
+          href: "https://github.com/kevinangers/Spinify",
+        },
+        {
+          title: "Video Demo",
           icon: <Icons.youtube className="h-4 w-4" />,
-          href: "https://www.youtube.com/watch?v=XwFdn5Rmx68",
-        },
-        {
-          title: "Source",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/pocketdoc-react-native",
+          href: "https://www.youtube.com/watch?v=Hmik-6Sq3YM",
         },
       ],
     },
     {
-      title: "SpaceApps Waterloo",
-      dates: "April 28th - 30th, 2017",
-      location: "Waterloo, Ontario",
+      title: "Arduino New Year's Countdown Clock",
+      dates: "December 2021",
+      location: "",
       description:
-        "Developed Earthwatch, a web application which allows users in a plane to virtually see important points of interest about the world below them. They can even choose to fly away from their route and then fly back if they choose. Special thanks to CesiumJS for providing open source world and plane models.",
+        "To market my products, I created an Arduino-based New Year countdown, which uses a real-time clock (RTC) module to get the current time and determine how much time there is remaining until the New Year. Be sure to see the video above for a demo!",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/space-apps.png",
+        "projects/new-years-countdown.jpg",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/earthwatch",
+          href: "https://github.com/ProgettoCompany/New_Year_Countdown",
+        },
+        {
+          title: "Instructables",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.instructables.com/Arduino-New-Year-Countdown-Clock/",
+        },
+        {
+          title: "Video Demo",
+          icon: <Icons.youtube className="h-4 w-4" />,
+          href: "https://www.youtube.com/watch?v=m3ZdokzxSN0",
         },
       ],
     },
     {
-      title: "MHacks 9",
-      dates: "March 24th - 26th, 2017",
-      location: "Ann Arbor, Michigan",
+      title: "Arduino Reaction Time Tester",
+      dates: "August 2021",
+      location: "",
       description:
-        "Developed Super Graphic Air Traffic, a VR website made to introduce people to the world of air traffic controlling. This project was built completely using THREE.js as well as a node backend server.",
+        "To market some of my new products I created an Arduino-based reaction tester back in 2021, which measures the user's reaction time by randomly activating an LED, starting a timer and then displaying the value of the timer when the user pushes the button. Be sure to see the video demo!",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/mhacks-9.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
+        "projects/reaction-time-tester.jpg",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/threejs-planes",
+          href: "https://github.com/ProgettoCompany/Arduino_Reaction_Tester"
         },
+        {
+          title: "Instructables",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.instructables.com/Arduino-Reaction-Tester/"
+        },
+        {
+          title: "Video Demo",
+          icon: <Icons.youtube className="h-4 w-4" />,
+          href: "https://www.youtube.com/watch?v=VeCW8oQnrw8"
+        }
       ],
     },
     {
-      title: "StartHacks I",
-      dates: "March 4th - 5th, 2017",
-      location: "Waterloo, Ontario",
+      title: "Raspberry Pi Cryptocurrency Tracker",
+      dates: "August 2021",
+      location: "",
       description:
-        "Developed at StartHacks 2017, Recipic is a mobile app which allows you to take pictures of ingredients around your house, and it will recognize those ingredients using ClarifAI image recognition API and return possible recipes to make. Recipic recieved 1st place at the hackathon for best pitch and hack.",
+        "To promote my products I created a simple cryptocurrency tracker using a Raspberry Pi. a 16x2 I2C LCD, and a One Pin Keypad, along with a few other miscellaneous components. Since this project uses Python to connect to the CoinGecko API, you can easily add support for other cryptocurrencies beyond the three (Bitcoin, Ethereum and Litecoin) included in the code for this tutorial.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/starthacks.png",
-      win: "1st Place Winner",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-ionic",
-        },
-        {
-          title: "Source (Server)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/recipic-rails",
-        },
-      ],
-    },
-    {
-      title: "QHacks II",
-      dates: "February 3rd - 5th, 2017",
-      location: "Kingston, Ontario",
-      description:
-        "Developed a mobile game which enables city-wide manhunt with random lobbies",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/qhacks.png",
-      mlh: "https://s3.amazonaws.com/logged-assets/trust-badge/2017/white.svg",
-      links: [
-        {
-          title: "Source (Mobile)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/dillionverma/human-huntr-react-native",
-        },
-        {
-          title: "Source (API)",
-          icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/mattBlackDesign/human-huntr-rails",
-        },
-      ],
-    },
-    {
-      title: "Terrible Hacks V",
-      dates: "November 26th, 2016",
-      location: "Waterloo, Ontario",
-      description:
-        "Developed a mock of Windows 11 with interesting notifications and functionality",
-      image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/terrible-hacks-v.png",
+        "projects/crypto-price-tracker.webp",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/justinmichaud/TerribleHacks2016-Windows11",
+          href: "https://github.com/ProgettoCompany/Crypto_Price_Tracker",
         },
+        {
+          title: "Instructables",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.instructables.com/Raspberry-Pi-Cryptocurrency-Tracker/"
+        },
+        {
+          title: "Video Demo",
+          icon: <Icons.youtube className="h-4 w-4" />,
+          href: "https://www.youtube.com/watch?v=bqy6lJRknvs"
+        }
       ],
     },
     {
-      title: "Portal Hackathon",
-      dates: "October 29, 2016",
-      location: "Kingston, Ontario",
+      title: "Simple Arduino Calculator",
+      dates: "July 2021",
+      location: "",
       description:
-        "Developed an internal widget for uploading assignments using Waterloo's portal app",
+        "To market some of my products I created a simple Arduino calculator with basic arithmetic operators and support for numbers with decimals. However, this calculator does have other limitations, to simplify the code, this calculator evaluates the result from left to right, without regard for the order of operations. It also has no support for negative numbers. Be sure to see the video demo.",
       image:
-        "https://pub-83c5db439b40468498f97946200806f7.r2.dev/hackline/portal-hackathon.png",
+        "projects/arduino-calculator.jpg",
       links: [
         {
           title: "Source",
           icon: <Icons.github className="h-4 w-4" />,
-          href: "https://github.com/UWPortalSDK/crowmark",
+          href: "https://github.com/ProgettoCompany/Simple_Arduino_Calculator",
         },
+        {
+          title: "Instructables",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.instructables.com/Simple-Arduino-Calculator-1/"
+        },
+        {
+          title: "Video Demo",
+          icon: <Icons.youtube className="h-4 w-4" />,
+          href: "https://www.youtube.com/watch?v=BjUUuz75J9A"
+        }
       ],
     },
   ],
