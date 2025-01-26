@@ -18,6 +18,8 @@ export const DATA = {
     "Python",
     "Go/Golang",
     "Fusion 360",
+    "MATLAB",
+    "Soldering",
     "Flutter",
     "Prototyping",
     "Postgres",
