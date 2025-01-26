@@ -114,7 +114,7 @@ export const DATA = {
       start: "May 2022",
       end: "September 2022",
       description:
-        "• Tested and debugged network card prototypes using oscilloscopes and multimeters.\n• Created several innovative PoC projects to save Nokia time and money:\n o Automated a design workflow by creating a VBA-based optimization tool.\n o Developed a Perl-based script generator for automating manual telnet command sequences.\n o Used Fusion 360 to design, prototype, and produce 3D-printed bench-tool alternatives for a tenth of the market price.",
+        "• Tested and debugged network card prototypes using oscilloscopes and multimeters.\n• Created several innovative PoC projects to save Nokia time and money:\n\t◦ Automated a design workflow by creating a VBA-based optimization tool.\n\t◦ Developed a Perl-based script generator for automating manual telnet command sequences.\n\t◦ Used Fusion 360 to design, prototype, and produce 3D-printed bench-tool alternatives for a tenth of the market price.",
     },
     {
       company: "FRC Team 2706 - Merge Robotics",
@@ -149,7 +149,7 @@ export const DATA = {
       start: "July 2019",
       end: "August 2019",
       description:
-        "• Independently developed a prototypical schematic validation application for optical networking circuit boards using Python, exercising all facets of a software delivery cycle:\n o Requirement-gathering, design, prototyping, debugging, testing, documentation.\n• Developed documentation with Sphinx generating HTML and CSS using Python.",
+        "• Independently developed a prototypical schematic validation application for optical networking circuit boards using Python, exercising all facets of a software delivery cycle:\n\t◦ Requirement-gathering, design, prototyping, debugging, testing, documentation.\n• Developed documentation with Sphinx generating HTML and CSS using Python.",
     },
   ],
   education: [

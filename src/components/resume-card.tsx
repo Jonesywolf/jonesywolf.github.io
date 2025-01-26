@@ -101,7 +101,12 @@ export const ResumeCard = ({
             >
               {description.split('\n').map((line, index) => (
               <React.Fragment key={index}>
-                {line}
+                {line.split('\t').map((segment, segIndex) => (
+                <React.Fragment key={segIndex}>
+                  {segment}
+                  {segIndex < line.split('\t').length - 1 && <span>&emsp;</span>}
+                </React.Fragment>
+                ))}
                 <br />
               </React.Fragment>
               ))}
