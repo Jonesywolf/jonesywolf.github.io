@@ -1,4 +1,5 @@
 import { Icons } from "@/components/icons";
+import { StarIcon } from "@radix-ui/react-icons";
 import { HammerIcon, HomeIcon } from "lucide-react";
 import { title } from "process";
 
@@ -30,6 +31,7 @@ export const DATA = {
   ],
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+    { href: "/#highlighted-projects", icon: StarIcon, label: "Highlighted Projects" },
     { href: "/#projects", icon: HammerIcon, label: "Projects" },
   ],
   contact: {
@@ -50,14 +52,14 @@ export const DATA = {
 
         navbar: true,
       },
-      email: {
+      Email: {
         name: "Send Email",
         url: "mailto:4johnryanwolf@gmail.com",
         icon: Icons.email,
 
         navbar: true,
       },
-      goodreads: {
+      Goodreads: {
         name: "Goodreads",
         url: "https://dub.sh/jw-goodreads",
         icon: Icons.goodreads,
