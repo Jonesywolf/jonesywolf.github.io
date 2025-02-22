@@ -60,13 +60,6 @@ export const DATA = {
 
         navbar: true,
       },
-      Goodreads: {
-        name: "Goodreads",
-        url: "https://dub.sh/jw-goodreads",
-        icon: Icons.goodreads,
-
-        navbar: true,
-      }
     },
   },
 
