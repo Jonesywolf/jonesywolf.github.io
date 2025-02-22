@@ -1,6 +1,6 @@
 import { Icons } from "@/components/icons";
 import { StarIcon } from "@radix-ui/react-icons";
-import { HammerIcon, HomeIcon } from "lucide-react";
+import { HandshakeIcon, HammerIcon, HomeIcon } from "lucide-react";
 import { title } from "process";
 
 export const DATA = {
@@ -33,6 +33,7 @@ export const DATA = {
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/#highlighted-projects", icon: StarIcon, label: "Highlighted Projects" },
     { href: "/#projects", icon: HammerIcon, label: "Projects" },
+    { href: "/#ventures", icon: HandshakeIcon, label: "Ventures" },
   ],
   contact: {
     email: "4johnryanwolf@gmail.com",
@@ -287,6 +288,136 @@ export const DATA = {
       ],
       image: "/bitcaml.jpg", // TODO: Make this a gif
       video: "",
+    },
+  ],
+  ventures: [
+    {
+      title: "Oneno Development",
+      dates: "May 2024 - Present",
+      status: "Launching Soon",
+      description:
+        "Offshoot of Progetto Company, focusing on app and web development, many upcoming projects, the first of which is Chestor, an AI-enhanced storage app for iOS and Android.",
+      image:
+        "ventures/oneno.jpg",
+      links: [
+        {
+          title: "Website (Not Live)",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://oneno.dev",
+        },
+      ],
+    },
+    {
+      title: "Twinkling Ink",
+      dates: "May 2023 - August 2023",
+      status: "Abandoned",
+      description:
+        "Offshoot of Buy The Hearth, focused exclusively on reselling printer ink and toner on eBay. I found that the margins were too low to justify the time spent sourcing and listing them.",
+      image:
+        "ventures/twinklingink.jpg",
+      links: [
+        {
+          title: "eBay Storefront",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.ebay.ca/usr/twinklingink",
+        },
+      ],
+    },
+    {
+      title: "eployee services",
+      dates: "August 2021 - November 2021",
+      status: "Abandoned",
+      description:
+        "I started a small SaaS company with my friend Ishan Baliyan, we only ever finished one, a pixel art upscaler on Fiverr, we then tried to make a Downdetector-powered Discord bot, but the API we relied on was discontinued. We abandoned the business soon afterward due to lack of sales.",
+      image:
+        "ventures/eployee.jpg",
+      links: [
+        {
+          title: "X.com",
+          icon: <Icons.x className="h-4 w-4" />,
+          href: "https://x.com/eployeeservices",
+        },
+      ],
+    },
+    {
+      title: "Aesthetaphi",
+      dates: "August 2021 - June 2021",
+      status: "Abandoned",
+      description:
+        "I briefly tried my hand at print on demand, but I found the key to success is a combination of great marketing and enjoying the process of creating the designs, neither of which I had the time or inclination for.",
+      image:
+        "ventures/aesthetaphi.jpg",
+      links: [
+        {
+          title: "Instagram",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.instagram.com/aesthetaphi",
+        },
+      ],
+    },
+    {
+      title: "Buy The Hearth",
+      dates: "December 2021 - Present",
+      status: "Active",
+      description:
+        "I resell used electronics, video games and other assorted items on eBay, Facebook Marketplace, and Kijiji. I've sold over 200 items and have a 100% positive feedback rating on eBay.",
+      image:
+        "ventures/buythehearth.jpg",
+      links: [
+        {
+          title: "eBay Storefront",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.ebay.ca/usr/buythehearth",
+        },
+      ],
+    },
+    {
+      title: "Fix o' Bricks",
+      dates: "May 2021 - Present",
+      status: "Suspending Operations",
+      description:
+        "Reselling used inventory requires constant sourcing, I thought I would have better luck reselling LEGO sets once they retired, but the margins were too low to justify the time spent holding them until prices climbed. I'm actively selling off my remaining inventory and will be suspending operations.",
+      image:
+        "ventures/fixobricks.jpg",
+      links: [
+        {
+          title: "eBay Storefront",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.ebay.ca/usr/fixobricks",
+        },
+      ],
+    },
+    {
+      title: "The Wolf Cave Dev",
+      dates: "April 2019 - April 2020",
+      status: "On Hiatus",
+      description:
+        "I briefly tried my hand at making a YouTube channel, but I found that I didn't have the time to dedicate to it and didn't enjoy the video editing process. I'm keeping the channel up for now, but I'm not actively producing content.",
+      image:
+        "ventures/wolfcavedev.jpg",
+      links: [
+        {
+          title: "YouTube Channel",
+          icon: <Icons.youtube className="h-4 w-4" />,
+          href: "https://www.youtube.com/@wolfcavedev",
+        },
+      ],
+    },
+    {
+      title: "Progetto Company",
+      dates: "January 2019 - Present",
+      status: "Active",
+      description:
+        "As mentioned in my experience section, I sell hobbyist electronics modules for Arduino and Raspberry Pi enthusiasts. Progetto now has ~7.5K followers on Instagram, with paying customers in 8 countries.",
+      image:
+        "progetto.jpg",
+      links: [
+        {
+          title: "Tindie Store",
+          icon: <Icons.globe className="h-4 w-4" />,
+          href: "https://www.tindie.com/stores/Progetto/",
+        },
+      ],
     },
   ],
   projects: [

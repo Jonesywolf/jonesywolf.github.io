@@ -1,5 +1,6 @@
 import Email from "@/components/email";
 import { ProjectCard } from "@/components/project-card";
+import { VentureCard } from "@/components/venture-card";
 import BlurFade from "@/components/magicui/blur-fade";
 import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { HighlightedProjectCard } from "@/components/highlighted-project-card";
@@ -30,10 +31,10 @@ export default function Page() {
                 delay={BLUR_FADE_DELAY}
                 text={`${DATA.description} | ${DATA.location}`}
               />
-              <Email 
-              className="flex-row flex items-center space-x-1.5"
-              delay={BLUR_FADE_DELAY}
-              email={DATA.contact.email}
+              <Email
+                className="flex-row flex items-center space-x-1.5"
+                delay={BLUR_FADE_DELAY}
+                email={DATA.contact.email}
               />
             </div>
             <BlurFade delay={BLUR_FADE_DELAY}>
@@ -119,7 +120,10 @@ export default function Page() {
                   My favourite creations
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  I&apos;ve always had a side project (or two) on the go. Trying (and failing) to make something new has taught me more about engineering and myself than anything else ever has. Here&apos;s the highlight reel:
+                  I&apos;ve always had a side project (or two) on the go. Trying
+                  (and failing) to make something new has taught me more about
+                  engineering and myself than anything else ever has.
+                  Here&apos;s the highlight reel:
                 </p>
               </div>
             </div>
@@ -158,7 +162,11 @@ export default function Page() {
                   I like building things
                 </h2>
                 <p className="text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                  Not all my projects knocked it out of the park. Here are some of the other projects I&apos;ve worked on in the past, some of these were for Progetto Company, but being a one-man show, I still consider them personal projects. I&apos;m proud of all of them, weird ones and all.
+                  Not all my projects knocked it out of the park. Here are some
+                  of the other projects I&apos;ve worked on in the past, some of
+                  these were for Progetto Company, but being a one-man show, I
+                  still consider them personal projects. I&apos;m proud of all
+                  of them, weird ones and all.
                 </p>
               </div>
             </div>
@@ -185,25 +193,47 @@ export default function Page() {
         </div>
       </section>
       <section id="ventures">
-      <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 16}>
-            <div className="space-y-2">
-              <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
-                Ventures
+        <div className="space-y-12 w-full py-12">
+          <BlurFade delay={BLUR_FADE_DELAY * 15}>
+            <div className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
+                  Ventures
+                </div>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
+                  I like making money
+                </h2>
+                <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  I&apos;ve always been interested in entrepreneurship. Here are
+                  some of the ventures I&apos;ve worked on in the past. Some made money, some didn&apos;t.
+                </p>
               </div>
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl">
-                I like making money
-              </h2>
-              <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Coming Soon...
-              </p>
             </div>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 16}>
+            <ul className="mb-4 ml-4 divide-y divide-dashed border-l">
+              {DATA.ventures.map((venture, id) => (
+                <BlurFade
+                  key={venture.title + venture.dates}
+                  delay={BLUR_FADE_DELAY * 16 + id * 0.05}
+                >
+                  <VentureCard
+                    title={venture.title}
+                    description={venture.description}
+                    status={venture.status}
+                    dates={venture.dates}
+                    image={venture.image}
+                    links={venture.links}
+                  />
+                </BlurFade>
+              ))}
+            </ul>
           </BlurFade>
         </div>
       </section>
       <section id="contact">
         <div className="grid items-center justify-center gap-4 px-4 text-center md:px-6 w-full py-12">
-          <BlurFade delay={BLUR_FADE_DELAY * 18}>
+          <BlurFade delay={BLUR_FADE_DELAY * 17}>
             <div className="space-y-2">
               <div className="inline-block rounded-lg bg-foreground text-background px-3 py-1 text-sm">
                 Contact
@@ -212,7 +242,11 @@ export default function Page() {
                 Get in Touch
               </h2>
               <p className="mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                I&apos;m currently looking for full-time opportunities post graduation (May 2025). As I hope my projects demonstrate, I have a broad set of interests and skillsets. If you think I&apos;d be a good fit for your team, or if you just want to chat, feel free to reach out to me via email or LinkedIn, as you prefer.
+                I&apos;m currently looking for full-time opportunities post
+                graduation (May 2025). As I hope my projects demonstrate, I have
+                a broad set of interests and skillsets. If you think I&apos;d be
+                a good fit for your team, or if you just want to chat, feel free
+                to reach out to me via email or LinkedIn, as you prefer.
               </p>
             </div>
           </BlurFade>
